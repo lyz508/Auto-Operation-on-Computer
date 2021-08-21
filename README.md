@@ -1,4 +1,4 @@
-# autoClick
+# Auto Type to Screen
 - for automatically type on windows
 - auto message, repeat work
 
