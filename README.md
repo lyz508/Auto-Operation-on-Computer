@@ -4,9 +4,9 @@
 
 ## Example
 ### Full process
-![full_process](https://github.com/lyz508/AutoTypeToScreen/tree/master/resources/autoType_full_process.gif)
+![full_process](https://github.com/lyz508/AutoTypeToScreen/blob/master/resources/autoType_full_process.gif)
 ### Change & Save & Load about settings
-![other_function](https://github.com/lyz508/AutoTypeToScreen/tree/master/resources/autoType_other.gif)
+![other_function](https://github.com/lyz508/AutoTypeToScreen/blob/master/resources/autoType_other.gif)
 
 
 ## dependency
