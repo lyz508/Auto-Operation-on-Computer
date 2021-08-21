@@ -34,11 +34,10 @@ def main():
                     h.save_to_file()
                 elif a == 5:
                     h.load_from_file()
-                else:
+                else:   
                     raise ValueError
             except ValueError:
                 print("Please input correctly.")
-            time.sleep(1)
             # os.system("cls")
     except KeyboardInterrupt:
         print("End.")

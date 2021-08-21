@@ -38,11 +38,13 @@ class Handler:
     # Store message
     def read_message(self, s: str = ""):
         if s == "":     # ! no outer argument
+            self.m = ""
             print("Read until \"ctrl+z\" (EOF)")
             try:
                 while True:
                     self.m += input(": ") + "\n"
             except EOFError:
+                self.m = self.m[:-1]
                 print(f"Want output: {repr(self.m)}")
         else:
             self.m = s
@@ -54,7 +56,9 @@ class Handler:
         print("typing")
         try:
             for i in range(self.loop):
+                pyautogui.moveTo(self.p.x, self.p.y)
                 pyautogui.click(self.p.x, self.p.y)
+                time.sleep(0.5)
                 pyperclip.copy(self.m)
                 pyautogui.hotkey('ctrl', 'v')
                 pyautogui.typewrite(self.between_loop)
@@ -86,7 +90,7 @@ class Handler:
     # Read formor setting
     def load_from_file(self):
         data = {}
-        with open("setting.txt", "r") as fo:
+        with open("setting.txt", "r", encoding="utf-8") as fo:
             data = json.load(fo)
             self.m = data["message"]
             self.loop = int(data["loop"])
@@ -126,7 +130,7 @@ class Handler:
             self.between_loop = s
         # time interval
         print(f"Want to change the interval?\n\
-            (now is {self.t_interval})")
+            (now is {self.t_interval} s)")
         if getyn():
             while True:
                 try:
