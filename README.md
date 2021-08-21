@@ -2,19 +2,13 @@
 - for automatically type on windows
 - auto message, repeat typeing
 
-## Example
-### Full process
-![full_process](https://github.com/lyz508/AutoTypeToScreen/blob/master/resources/autoType_full_process.gif)
-### Change & Save & Load about settings
-![other_function](https://github.com/lyz508/AutoTypeToScreen/blob/master/resources/autoType_other.gif)
 
-
-## dependency
+## Dependency
 - time
 - pyautogui
 - pyperclick
 
-## man
+## Manual
 - action:
     1. Full process
     2. Type with current settings
@@ -22,6 +16,12 @@
     4. Show settings
     5. Save current settings
     6. Load formor settings
+
+## Example
+### Full process
+![full_process](https://github.com/lyz508/AutoTypeToScreen/blob/master/resources/autoType_full_process.gif)
+### Change & Save & Load about settings
+![other_function](https://github.com/lyz508/AutoTypeToScreen/blob/master/resources/autoType_other.gif)
 
 # Schedule
 ## Update Record function
