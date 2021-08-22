@@ -15,6 +15,7 @@
 
 # Auto Script
 ![show](https://github.com/lyz508/Auto-Operation-on-Computer/blob/master/resources/autoOpration_script.gif)
+![comlex_work](https://github.com/lyz508/Auto-Operation-on-Computer/blob/master/resources/auto_show.gif)
 ## System cmd:
 ```
 <CMD> <sec or space>;
