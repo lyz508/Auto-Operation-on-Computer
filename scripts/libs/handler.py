@@ -83,7 +83,7 @@ class Handler:
             "message":self.m,
             "Position":[self.p.x, self.p.y]
         }
-        with open("setting.txt", "w") as fp:
+        with open("setting.txt", "w", encoding="utf-8") as fp:
             json.dump(to_write, fp)
         print("Saved.")
 
