@@ -8,7 +8,7 @@
 - time
 - pyautogui
 - pyperclick
-- os (flush CLI)
+- os (flush CLI, Path)
 
 
 
@@ -78,7 +78,9 @@
 - Read Script File
 0. Default script name (autoScript.txt)
 1. Enter script name
-2. Back.
+2. Show avalible
+    - show avalible files in current directory
+3. Back.
 
 
 # Update & Schedule

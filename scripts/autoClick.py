@@ -7,6 +7,7 @@
 """
 from libs.handler import Handler
 from libs.translator import Translator
+from pathlib import Path
 import os
 
 DEFAULT_SCRIPT = "autoScript.txt"
@@ -29,6 +30,7 @@ simple_type = [
 read_script = [
     f"Default script name ({DEFAULT_SCRIPT})",
     "Enter script name",
+    "Show avalible",
     "Back."
 ]
 
@@ -99,6 +101,9 @@ def main():
                         except FileNotFoundError:
                             print(f"can't find {script_file}")
                     elif act == 2:
+                        for i in Path().iterdir():
+                            print(i)
+                    elif act == 3:
                         os.system("cls")
                         break
     except KeyboardInterrupt:
