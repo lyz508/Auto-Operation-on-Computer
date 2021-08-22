@@ -1,3 +1,10 @@
+"""
+ * @author yzlin
+ * @email thomas7892009@gmail.com
+ * @create date 2021-08-21 17:20:36
+ * @modify date 2021-08-22 22:03:24
+ * @desc auto operation, support script
+"""
 from io import FileIO
 import pyautogui
 import time
@@ -76,6 +83,7 @@ class Handler:
 
     # Save current setting
     def save_to_file(self):
+        file_name = "setting.txt"
         to_write: dict = {
             "loop":self.loop,
             "between_loop":self.between_loop,
@@ -83,9 +91,9 @@ class Handler:
             "message":self.m,
             "Position":[self.p.x, self.p.y]
         }
-        with open("setting.txt", "w", encoding="utf-8") as fp:
+        with open(file_name, "w", encoding="utf-8") as fp:
             json.dump(to_write, fp)
-        print("Saved.")
+        print(f"Saved to {file_name}.")
 
     # Read formor setting
     def load_from_file(self):
