@@ -11,58 +11,60 @@
 - os (flush CLI)
 
 
-## Auto Script
+
+
+# Auto Script
 ![show](https://github.com/lyz508/Auto-Operation-on-Computer/blob/master/resources/autoOpration_script.gif)
-### System cmd:
+## System cmd:
 ```
 <CMD> <sec or space>;
 ```
 - commands for interpreter
-1. pause
-2. gain_mouse_l
-3. gain_mouse
-4. gain_string
-### Mouse cmd:
+1. **pause**
+2. **gain_mouse_l**
+3. **gain_mouse**
+4. **gain_string**
+## Mouse cmd:
 ```
 <CMD> <x>, <y>;
 ```
 - commands for mouse function
 - Must provide **X, Y**.
-1. click
-2. move_to
-### Keyboard cmd:
-1. press
+1. **click**
+2. **move_to**
+## Keyboard cmd:
+1. **press**
     ```
     press <key or specific word>
     # ex
     press enter;
     ```
     - specific word: 'enter', 'ctrl'
-2. hotkey: for combinational key press
+2. **hotkey**: for combinational key press
     ```
     hotkey <key1> <key2>
     # ex
     hotkey ctrl, c;
     ```
-3. write: for input on keyboard
+3. **write**: for input on keyboard
     ```
     write meg=<messages>;
     # ex
     write meg=Hello World!!!;
     ```
     - if want to input several lines, leave empty on meg, then a function will be executed to accept the article.
-## Simple Type
+# Simple Type
 - Basic use of auto click and input
 ![full_process](https://github.com/lyz508/Auto-Operation-on-Computer/blob/master/resources/autoType_full_process.gif)
 - Type to specified position
 - can set loop **times, interval, character** between loop.
 
 
-## Manual
+# Manual
 - Choose Mode:
     1. Simple Type      
     2. Read Script
-### Simple Type
+## Simple Type
 0. Full process
     - Specified -> Input Message -> Type
 1. Type with current settings
@@ -72,35 +74,36 @@
     - default file name: setting.txt
 5. Load formor settings
 6. Back.
-### Script
+## Script
 - Read Script File
 0. Default script name (autoScript.txt)
 1. Enter script name
 2. Back.
 
 
-# Schedule
-## ~~Update Record function~~
+# Update & Schedule
+## Update
+### 2021.8.22
+- Complete a simple intepreter, which can deal with commands about mouse action and keyboard action.
+- Change repository name: **AutoTypeToScreen** -> **Auto-Operation-on-Computer**
+- Update detailed README
+
+## Schedule
+### ~~Update Record function~~
 - scheduled date: 2021.8.21
 - Will be able to record the actions
 - can afford complex work
-- Complete: **2021.8.22**
-## Loop Support
+- **Complete: 2021.8.22**
+### Loop Support
 - scheduled date: 2021.8.22
 - Will support loop in scripts
-## Combinational & Coordination on commands
+### Combinational & Coordination on commands
 - scheduled date: 2021.8.22
 - will support mouse drag
-## Multiple on Write Input
+### Multiple on Write Input
 - scheduled date: 2021.8.22
 - Problem:
     - when using repr(), colon wont be specified by re expression
     - using temp solution -> call handler function (read_message())
 - Expected Solution
     - Optimized re exp.
-
-# Update
-## 2021.8.22
-- Complete a simple intepreter, which can deal with commands about mouse action and keyboard action.
-- Change repository name: **AutoTypeToScreen** -> **Auto-Operation-on-Computer**
-- Update detailed README
