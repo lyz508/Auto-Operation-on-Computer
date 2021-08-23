@@ -1,2 +1,4 @@
 *.txt
 .vs/*
+__pycache__/
+*.py[cod]
