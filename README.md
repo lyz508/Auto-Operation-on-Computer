@@ -64,6 +64,12 @@
     1. Simple Type      
     2. Read Script
 ## Simple Type
+![full_process](https://github.com/lyz508/Auto-Operation-on-Computer/blob/master/resources/autoType_full_process.gif)
+```
+- Basic use of auto click and input
+- Type to specified position
+- can set loop **times, interval, character** between loop.
+```
 0. Full process
     - Specified -> Input Message -> Type
 1. Type with current settings
@@ -74,11 +80,6 @@
 5. Load formor settings
 6. Back.
 ## Script
-- Basic use of auto click and input
-![full_process](https://github.com/lyz508/Auto-Operation-on-Computer/blob/master/resources/autoType_full_process.gif)
-- Type to specified position
-- can set loop **times, interval, character** between loop.
-
 - Read Script File
 0. Default script name (autoScript.txt)
 1. Enter script name
