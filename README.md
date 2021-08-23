@@ -1,21 +1,22 @@
 # Auto Type to Screen
 - Automatically work on computer
 - Script base
+- **WPF** for ui design
 
 
-## Required Python Module
+## Requirement
 - re
 - time
 - pyautogui
 - pyperclick
 - os (flush CLI, Path)
+- dotnet environment (Optional, can simply use demo.py)
 
 
 
 
 # Auto Script
-![show](https://github.com/lyz508/Auto-Operation-on-Computer/blob/master/resources/autoOpration_script.gif)
-![comlex_work](https://github.com/lyz508/Auto-Operation-on-Computer/blob/master/resources/auto_show.gif)
+![WPF_example](https://github.com/lyz508/Auto-Operation-on-Computer/blob/master/resources/WPF_example.gif)
 ## System cmd:
 ```
 <CMD> <sec or space>;
@@ -54,14 +55,11 @@
     write meg=Hello World!!!;
     ```
     - if want to input several lines, leave empty on meg, then a function will be executed to accept the article.
-# Simple Type
-- Basic use of auto click and input
-![full_process](https://github.com/lyz508/Auto-Operation-on-Computer/blob/master/resources/autoType_full_process.gif)
-- Type to specified position
-- can set loop **times, interval, character** between loop.
 
 
-# Manual
+
+# Manual (for demo.py)
+![comlex_work](https://github.com/lyz508/Auto-Operation-on-Computer/blob/master/resources/auto_show.gif)
 - Choose Mode:
     1. Simple Type      
     2. Read Script
@@ -76,6 +74,11 @@
 5. Load formor settings
 6. Back.
 ## Script
+- Basic use of auto click and input
+![full_process](https://github.com/lyz508/Auto-Operation-on-Computer/blob/master/resources/autoType_full_process.gif)
+- Type to specified position
+- can set loop **times, interval, character** between loop.
+
 - Read Script File
 0. Default script name (autoScript.txt)
 1. Enter script name
@@ -90,6 +93,13 @@
 - Complete a simple intepreter, which can deal with commands about mouse action and keyboard action.
 - Change repository name: **AutoTypeToScreen** -> **Auto-Operation-on-Computer**
 - Update detailed README
+### 2021.8.23
+- Add MVC for gui
+    - M: libs.translator
+    - V: autoViewer.csproj
+    - C: autoController.py
+- with WPF
+- reformat README
 
 ## Schedule
 ### ~~Update Record function~~
