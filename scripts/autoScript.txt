@@ -1,6 +1,0 @@
-move_to -1620, 114;
-click -1620, 114;
-click -1188, 113;
-click -1654, 118;
-write meg=firefox;
-press enter;

@@ -17,7 +17,7 @@
             <ColumnDefinition Width="158*"/>
             <ColumnDefinition Width="317*"/>
         </Grid.ColumnDefinitions>
-        <Grid Grid.Column="2" Width="292" Margin="8,10,10,10">
+        <Grid Grid.Column="2" Width="292" Margin="8,10,10,10" Height="Auto">
             <TextBlock x:Name="txtBoxShow_Stdout" Text="Stdout" TextWrapping="Wrap" Width="292" FontFamily="Bahnschrift Light" ScrollViewer.CanContentScroll="True" Margin="0,10,0,10"/>
         </Grid>
         <Grid HorizontalAlignment="Center" Margin="0,49,0,0" Grid.Row="1" VerticalAlignment="Top" Height="38" Width="278" Grid.ColumnSpan="2" Grid.RowSpan="2">
@@ -27,7 +27,7 @@
             <Button x:Name="BtnReadScript" Content="ReadScript" HorizontalAlignment="Center" VerticalAlignment="Stretch" Height="27" Width="278" Click="BtnReadScript_Click" HorizontalContentAlignment="Center" VerticalContentAlignment="Stretch"/>
         </Grid>
         <Grid Margin="10,10,8,5" Grid.ColumnSpan="2">
-            <ListBox x:Name="ListBox_ListScripts" SelectionChanged="ListBox_ListScripts_SelectionChanged"/>
+            <ListBox x:Name="ListBox_ListScripts" SelectionChanged="ListBox_ListScripts_SelectionChanged" ScrollViewer.CanContentScroll="True"/>
         </Grid>
         <Grid Grid.Column="2" Margin="9,16,10,1" Grid.Row="1">
             <TextBlock x:Name="txtBlock_Stderr" Text="Stderr" TextWrapping="Wrap" ScrollViewer.CanContentScroll="True"/>

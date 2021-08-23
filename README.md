@@ -35,20 +35,26 @@
 1. **click**
 2. **move_to**
 ## Keyboard cmd:
+### Press Command
+```
+<press_CMD> <key or specific word>
+press enter;
+keydown backspace;
+keyup backspace;
+```
+- specific word: 'enter', 'ctrl'
+- **MIND: IF USE KEYDOWN, THEN MUST USE KEYUP BEFORE THE SCRIPTS!!!!!**
 1. **press**
-    ```
-    press <key or specific word>
-    # ex
-    press enter;
-    ```
-    - specific word: 'enter', 'ctrl'
-2. **hotkey**: for combinational key press
+2. **keydown**
+3. **keyup**
+### Other Command
+1. **hotkey**: for combinational key press
     ```
     hotkey <key1> <key2>
     # ex
     hotkey ctrl, c;
     ```
-3. **write**: for input on keyboard
+2. **write**: for input on keyboard
     ```
     write meg=<messages>;
     # ex

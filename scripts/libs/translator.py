@@ -8,12 +8,15 @@
 import re
 import time
 import pyautogui
-from .handler import Handler
+try:
+    from .handler import Handler
+except ImportError:
+    from handler import Handler
 
 # re pattern
 sys_cmd = "pause|gain_mouse_l|gain_mouse|gain_string"
 mouse_cmd = "click|move_to"
-p_cmd = "press"
+p_cmd = "press|keydown|keyup"
 hot_cmd = "hotkey"
 t_cmd = "write"
 point = r"(-?\d\d*), (-?\d\d*)"
@@ -82,7 +85,12 @@ class Translator:
             elif cmd[7] != "":    
                 self.cmd = cmd[7]
                 self.press = cmd[8]
-                pyautogui.press(self.press)
+                if self.cmd == "press":
+                    pyautogui.press(self.press)
+                elif self.cmd == "keydown":
+                    pyautogui.keyDown(self.press, )
+                elif self.cmd == "keyup":
+                    pyautogui.keyUp(self.press)
                 print(f"{self.cmd} '{self.press}'")
             # hot key
             elif cmd[9] != "":    
@@ -94,28 +102,15 @@ class Translator:
 
 if __name__ == "__main__":
     t = Translator()
-    strrr = "pause 1;\nclick 1, 2;\nwrite meg=ll;\npress k;\nhotkey alt,  ;"
-    strr = "gain_mouse;"
-    power_toy = "hotkey alt,  ;\nwrite meg=;"
-    l = "gain_mouse_l;"
-    test = "move_to -899, 5;\n\
-    click -899, 5\n\
-    move_to -1259, 44;\n\
-    click -1259, 44;\n\
-    write meg=google;\n\
-    press enter;"
-    
-    expl = "move_to 53, 154;\n\
-    click 53, 154;\n\
-    pause 1;\n\
-    move_to 827, 288;\n\
-    pause 0.5;\n\
-    click 827, 288;\n\
-    pause 0.5;\n\
-    write meg=school;\n\
-    pause 0.5;\n\
-    click 873, 346;\n"
 
-    res = t.parser.findall(power_toy)
+    downPress = "hotkey alt,  ;\n\
+    keydown alt;\n\
+    press tab;\n\
+    pause 2;\n\
+    press tab;\n\
+    pause 2;\n\
+    keyup alt;\n"
+
+    res = t.parser.findall(downPress)
     print(res)
-    t.parse(power_toy)
+    t.parse(downPress)
