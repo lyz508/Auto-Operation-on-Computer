@@ -16,7 +16,7 @@
 
 
 # Auto Script
-![WPF_example](https://github.com/lyz508/Auto-Operation-on-Computer/blob/master/resources/WPF_example.gif)
+
 ## System cmd:
 ```
 <CMD> <sec or space>;
@@ -24,6 +24,8 @@
 - commands for interpreter
 1. **pause**
 2. **gain_mouse_l**
+    - loop to sequential gain mouse position
+    - as an auxiliary tools for mouse cmd
 3. **gain_mouse**
 4. **gain_string**
 ## Mouse cmd:
@@ -109,6 +111,7 @@ keyup backspace;
 - reformat README
 
 ## Schedule
+![WPF_example](https://github.com/lyz508/Auto-Operation-on-Computer/blob/master/resources/WPF_example.gif)
 ### ~~Update Record function~~
 - scheduled date: 2021.8.21
 - Will be able to record the actions
