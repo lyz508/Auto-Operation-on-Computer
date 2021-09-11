@@ -72,7 +72,6 @@ keyup backspace;
     1. Simple Type      
     2. Read Script
 ## Simple Type
-![full_process](https://github.com/lyz508/Auto-Operation-on-Computer/blob/master/resources/autoType_full_process.gif)
 ```
 - Basic use of auto click and input
 - Type to specified position
